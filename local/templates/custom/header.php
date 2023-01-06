@@ -46,23 +46,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- header -->
 <div class="header">
     <div class="container">
-        <div class="logo">
-            <a href="index.html"><img src="<?=SITE_TEMPLATE_PATH;?>/images/logo.png" class="img-responsive" alt=""></a>
-        </div>
 
-        <div class="head-nav">
-            <span class="menu"> </span>
-            <ul class="cl-effect-1">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.htmlix/urlrewrite.php">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.htmlrix/urlrewrite.php">Blog</a></li>
-                <li><a href="404.htmltrix/urlrewrite.php">Shortcodes</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="contact.html/urlrewrite.php">Contact</a></li>
-                <div class="clearfix"></div>
-            </ul>
-        </div>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:main.include",
+            "",
+            Array(
+                "AREA_FILE_SHOW" => "file",
+                "AREA_FILE_SUFFIX" => "inc",
+                "EDIT_TEMPLATE" => "",
+                "PATH" => "/include/logo.php"
+            )
+        );?>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:menu",
+            "",
+            Array(
+                "ALLOW_MULTI_SELECT" => "N",
+                "CHILD_MENU_TYPE" => "left",
+                "DELAY" => "N",
+                "MAX_LEVEL" => "1",
+                "MENU_CACHE_GET_VARS" => array(""),
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_TYPE" => "N",
+                "MENU_CACHE_USE_GROUPS" => "Y",
+                "ROOT_MENU_TYPE" => "main",
+                "USE_EXT" => "N"
+            )
+        );?>
+<!--        <div class="head-nav">-->
+<!--            <span class="menu"> </span>-->
+<!--            <ul class="cl-effect-1">-->
+<!--                <li class="active"><a href="index.html">Home</a></li>-->
+<!--                <li><a href="about.htmlix/urlrewrite.php">About Us</a></li>-->
+<!--                <li><a href="services.html">Services</a></li>-->
+<!--                <li><a href="blog.htmlrix/urlrewrite.php">Blog</a></li>-->
+<!--                <li><a href="404.htmltrix/urlrewrite.php">Shortcodes</a></li>-->
+<!--                <li><a href="login.html">Login</a></li>-->
+<!--                <li><a href="contact.html/urlrewrite.php">Contact</a></li>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </ul>-->
+<!--        </div>-->
         <!-- script-for-nav -->
         <script>
             $( "span.menu" ).click(function() {
