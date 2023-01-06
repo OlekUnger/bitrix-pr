@@ -7,6 +7,11 @@
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path=".git" />
+            <excludedPath local="true" path=".idea" />
+            <excludedPath local="true" path=".gitignore" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
