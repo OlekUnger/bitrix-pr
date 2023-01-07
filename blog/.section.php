@@ -1,9 +1,9 @@
 <?
 $sSectionName = "Блог";
 $arDirProperties = Array(
-   "description" => "Блог",
+   "description" => "Описание блога",
    "keywords" => "Блог",
-   "title" => "Блог",
+   "title" => "Блог - список статей",
    "keywords_inner" => "Блог"
 );
 ?>

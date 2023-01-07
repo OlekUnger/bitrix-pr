@@ -23,7 +23,8 @@ $APPLICATION->SetTitle("Блог");
 		"DETAIL_DISPLAY_TOP_PAGER" => "N",
 		"DETAIL_FIELD_CODE" => array(
 			0 => "",
-			1 => "",
+			1 => "SHOW_COUNTER",
+			2 => "",
 		),
 		"DETAIL_PAGER_SHOW_ALL" => "Y",
 		"DETAIL_PAGER_TEMPLATE" => "",
@@ -86,7 +87,7 @@ $APPLICATION->SetTitle("Блог");
 		"COMPONENT_TEMPLATE" => "news",
 		"SEF_FOLDER" => "/blog/",
 		"SEF_URL_TEMPLATES" => array(
-			"news" => "blog/",
+			"news" => "",
 			"section" => "#SECTION_CODE_PATH#/",
 			"detail" => "#SECTION_CODE_PATH#/#ELEMENT_CODE#",
 		)
