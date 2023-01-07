@@ -67,47 +67,48 @@
     </div>
 </div>
 <div class="clearfix"></div>
+<?php if($APPLICATION->GetCurPage(false) == "/"):?>
 <div class="fle-xsel">
     <ul id="flexiselDemo3">
         <li>
             <a href="#">
                 <div class="banner-1">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/images/6.jpg" class="img-responsive" alt="">
+                    <img src="<?=DEFAULT_TEMPLATE_PATH;?>/images/6.jpg" class="img-responsive" alt="">
                 </div>
             </a>
         </li>
         <li>
             <a href="#">
                 <div class="banner-1">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/images/5.jpg" class="img-responsive" alt="">
+                    <img src="<?=DEFAULT_TEMPLATE_PATH;?>/images/5.jpg" class="img-responsive" alt="">
                 </div>
             </a>
         </li>
         <li>
             <a href="#">
                 <div class="banner-1">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/images/1.jpg" class="img-responsive" alt="">
+                    <img src="<?=DEFAULT_TEMPLATE_PATH;?>/images/1.jpg" class="img-responsive" alt="">
                 </div>
             </a>
         </li>
         <li>
             <a href="#">
                 <div class="banner-1">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/images/4.jpg" class="img-responsive" alt="">
+                    <img src="<?=DEFAULT_TEMPLATE_PATH;?>/images/4.jpg" class="img-responsive" alt="">
                 </div>
             </a>
         </li>
         <li>
             <a href="#">
                 <div class="banner-1">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/images/6.jpg" class="img-responsive" alt="">
+                    <img src="<?=DEFAULT_TEMPLATE_PATH;?>/images/6.jpg" class="img-responsive" alt="">
                 </div>
             </a>
         </li>
         <li>
             <a href="#">
                 <div class="banner-1">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/images/1.jpg" class="img-responsive" alt="">
+                    <img src="<?=DEFAULT_TEMPLATE_PATH;?>/images/1.jpg" class="img-responsive" alt="">
                 </div>
             </a>
         </li>
@@ -141,9 +142,10 @@
 
         });
     </script>
-    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH;?>/js/jquery.flexisel.js"></script>
+    <script type="text/javascript" src="<?=DEFAULT_TEMPLATE_PATH;?>/js/jquery.flexisel.js"></script>
     <div class="clearfix"></div>
 </div>
+<?php endif; ?>
 <div class="footer">
     <div class="col-md-3 foot-1">
         <h4>Quick Links</h4>

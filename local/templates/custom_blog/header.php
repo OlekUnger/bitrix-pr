@@ -91,4 +91,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!-- header -->
 <div class="container">
-    <div class="col-md-9 bann-right">
+    <div class="blog">
+
+        <div class="blog-content">
+            <div class="blog-content-left">
